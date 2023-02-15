@@ -20,29 +20,40 @@
       };
     </script>
   </head>
-  <body class="bg-ccpred pt-10">
-    <div class="pb-10">
+  <body class="bg-ccpred">
+    <div class="">
       <nav
-        class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+        class="bg-red text-amber-300 px-2 shadow-lg sm:px-4 py-2.5 dark:bg-red text-amber-300 fixed w-full z-20 top-0 left-0"
       >
         <div
           class="container flex flex-wrap items-center justify-between mx-auto"
         >
           <a href="https://www.gov.cn/" class="flex items-center">
-            <img src="/image/cccp.jpg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+            <img
+              src="cccp.jpg"
+              class="h-6 mr-3 sm:h-9"
+              alt="Flowbite Logo"
+            />
             <span
-              class="self-center text-xl font-semibold whitespace-nowrap dark:text-red"
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-amber-300"
               >CCP Main Page</span
             >
           </a>
           <div class="flex md:order-2">
-            <a href="https://www.gov.cn/" class="flex items-center">
-            <img src="/image/cccp.jpg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-          </a>
+            <a
+              href="https://www.gov.cn/"
+              class="flex items-center invisible md:visible"
+            >
+              <img
+                src="cccp.jpg"
+                class="h-6 mr-3 sm:h-9"
+                alt="Flowbite Logo"
+              />
+            </a>
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 navbar-sticky-button mbl-btn"
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
@@ -67,12 +78,12 @@
             id="navbar-sticky"
           >
             <ul
-              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-red md:dark:bg-red dark:border-gray-700"
             >
               <li>
                 <a
                   href="index.html"
-                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-red dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pl-3 pr-4 text-xl rounded hover:bg-red text-amber-300 md:hover:bg-transparent md:hover:text-amber-300 md:p-0 md:dark:hover:text-amber-300 dark:text-white dark:hover:bg-red text-amber-300 dark:hover:text-amber-300"
                   aria-current="page"
                   >Our Leader</a
                 >
@@ -80,31 +91,72 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-red md:p-0 dark:text-white"
+                  class="block py-2 pl-3 pr-4 text-white text-xl bg-blue-700 rounded md:bg-transparent md:text-amber-300 md:p-0 dark:text-white"
                   >Our Partners</a
                 >
               </li>
               <li>
                 <a
                   href="mascot.html"
-                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-red dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pl-3 pr-4 text-xl rounded hover:bg-red text-amber-300 md:hover:bg-transparent md:hover:text-amber-300 md:p-0 md:dark:hover:text-amber-300 dark:text-white dark:hover:bg-red text-amber-300 dark:hover:text-amber-300"
                   >Our Mascot</a
                 >
               </li>
               <li>
                 <a
                   href="contact.html"
-                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-red dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 pl-3 pr-4 text-xl rounded hover:bg-red text-amber-300 md:hover:bg-transparent md:hover:text-amber-300 md:p-0 md:dark:hover:text-amber-300 dark:text-white dark:hover:bg-red text-amber-300 dark:hover:text-amber-300"
                   >Contact</a
                 >
               </li>
             </ul>
           </div>
         </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul class="">
+            <li class="active">
+              <a
+                href="index.html"
+                class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="Partners.html"
+                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                >Partners</a
+              >
+            </li>
+            <li>
+              <a
+                href="mascot.html"
+                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                >Mascot</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mbl-btn");
+          const menu = document.querySelector(".mobile-menu");
+
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
       </nav>
     </div>
-    <div class="grid justify-items-center">
-      <div><img src="/image/yilanma.jpg" alt="" /></div>
+    <div class="grid justify-items-center pt-40">
+      <div><img src="yilanma.jpg" alt="" /></div>
       <div class="pt-5">
         <h1
           class="font-sans text-6xl font-bold text-white text-center p-1 border-8 rounded-3xl border-amber-50"
@@ -118,7 +170,7 @@
       </h2>
     </div>
     <div class="grid justify-items-center pt-20">
-      <div><img src="/image/zewok.jpg" alt="" /></div>
+      <div><img src="zewok.jpg" alt="" /></div>
       <div class="pt-5">
         <h1
           class="font-sans text-6xl font-bold text-white text-center p-1 border-8 rounded-3xl border-amber-50"
@@ -132,10 +184,8 @@
     </div>
   </body>
   <footer>
-    <footer>
-      <div class="text-center bottom-0 pt-20">
-        <div class="text-xl font-bold text-white">© CCCP 2021</div>
-      </div>
-    </footer>
+    <div class="text-center bottom-0 pt-20">
+      <div class="text-xl font-bold text-white">© CCCP 2021</div>
+    </div>
   </footer>
 </html>
